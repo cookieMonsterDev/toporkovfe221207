@@ -1,0 +1,172 @@
+.list-warpper {
+  width: 40rem;
+  max-height: 40rem;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-warpper_button {
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  border: 0.15rem solid rgb(121, 121, 121);
+  border-radius: 0.5rem;
+  color: rgb(45, 44, 44);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.users-widget-list_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0.3rem 0;
+  padding: 0.2rem;
+  border-bottom: 0.1rem solid rgb(121, 121, 121);
+}
+
+.users-widget-list_item section {
+  display: flex;
+}
+
+.users-widget-list_item section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.users-widget-list_item section div h1{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: rgb(121, 121, 121);
+}
+
+.users-widget-list_item section img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-position: top;
+  object-fit: cover;
+}
+
+.users-widget-list_item button {
+  width: auto;
+  background-color: transparent;
+  border: 0.15rem solid rgb(121, 121, 121);
+  border-radius: 0.5rem;
+  color: rgb(45, 44, 44);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.user-card {
+  width: 40rem;
+  height: 40rem;
+  border: 0.3rem solid rgb(121, 121, 121);
+  border-radius: 1rem; 
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.user-card section img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-position: top;
+  object-fit: cover;
+}
+
+.user-card section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.user-card section div h1{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: rgb(121, 121, 121);
+  text-align: center;
+}
+
+.user-card section div h1:first-child{
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.close_button {
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  opacity: 0.7; 
+}
+
+.close_button::before {
+  position: absolute;
+  content: '';
+  height: 3rem;
+  width: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.close_button::after {
+  position: absolute;
+  content: '';
+  height: 3rem;
+  width: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.close_button::before {
+  transform: rotate(45deg);
+}
+
+.close_button::after {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 56rem) {
+  .list-warpper {
+    width: 100vw;
+    max-height: 100vh;
+  }
+
+  .list-warpper_button {
+    width: 80%;
+    margin-top: 1rem;
+  }
+
+  .users-widget-list_item {
+    width: 95%;
+  }
+
+  .user-card {
+    width: 100vw;
+    height: 100vh;
+  }
+}
